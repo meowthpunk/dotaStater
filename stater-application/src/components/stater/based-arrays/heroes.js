@@ -65,7 +65,7 @@ const heroes = [
     urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/puck.png",
   },
   {
-    id: 135,
+    id: 100,
     name: "Dawnbreaker",
     urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
   },
