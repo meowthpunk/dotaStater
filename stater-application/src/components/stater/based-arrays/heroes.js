@@ -69,6 +69,11 @@ const heroes = [
     name: "Dawnbreaker",
     urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
   },
+  {
+    id: 100,
+    name: "Dawnbreaker",
+    urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+  },
 ];
 
 export default function(id){
