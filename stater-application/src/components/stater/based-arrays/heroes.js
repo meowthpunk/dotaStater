@@ -64,21 +64,6 @@ const heroes = [
     name: "Not Found",
     urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/puck.png",
   },
-  {
-    id: 100,
-    name: "Dawnbreaker",
-    urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
-  },
-  {
-    id: 98,
-    name: "Dawnbreaker",
-    urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
-  },
-  {
-    id: 9922,
-    name: "Dawnbreaker",
-    urlPath: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
-  },
 ];
 
 export default function(id){
