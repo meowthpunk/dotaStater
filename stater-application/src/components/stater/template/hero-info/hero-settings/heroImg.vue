@@ -20,6 +20,17 @@ export default {
   },
   mounted() {
     this.img = heroes(this.heroId).urlPath
+    
+  },
+  watch:{
+    heroId(){
+      this.setImg()
+    },
+  },
+  methods:{
+    setImg(){
+      this.img = heroes(this.heroId).urlPath
+    }
   },
 }
 </script>

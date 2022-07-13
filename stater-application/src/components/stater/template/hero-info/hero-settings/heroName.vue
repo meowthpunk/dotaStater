@@ -13,12 +13,25 @@ export default {
       name: null,
     }
   },
+
   name: 'heroName',
   props: {
     heroId: Number,
   },
   mounted() {
     this.name = heroes(this.heroId).name
+
+  },
+  watch:{
+    heroId(){
+      this.setName()
+    }
+  },
+  methods:{
+    setName(){
+      this.name = heroes(this.heroId).name
+      this.name = heroes(this.heroId).name
+    }
   },
 }
 </script>

@@ -4,10 +4,10 @@ import modeOfGame from './modeOfGame.js'
 import typeOfLobby from './typeOfLobby.js'
 
 
-async function userInfoDump(){
-  const account_id = 101356886
-  const num_matches = 5
-  let games = await parser(account_id, num_matches)
+
+
+export default async function(account_id, numMatches = 5, heroId = 46, gameModeId = 404){
+  let games = await parser(account_id, numMatches, heroId, gameModeId)
   const matchesDump = []
 
   for (let i = 0; i < games.games.length; i++) {
@@ -57,5 +57,3 @@ async function userInfoDump(){
   console.log(userInfoDump)
   return userInfoDump
 }
-
-export default userInfoDump();

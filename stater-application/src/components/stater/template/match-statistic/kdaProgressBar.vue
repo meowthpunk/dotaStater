@@ -25,10 +25,10 @@ export default{
   flex-grow: 1;
 }
 .pg-kills{
-  background-color: #a1ca52;
+  background-color: #9efc4c;
 }
 .pg-deaths{
-  background-color: #ea030e;
+  background-color: #ff1c37;
 }
 .pg-assists{
   background-color: #979797;

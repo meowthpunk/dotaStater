@@ -8,9 +8,14 @@ from steamMatches import sendGames
 app = Flask(__name__)
 
 @app.route("/shared")
-def home():
+async def home():
     if request.method == "GET":
-        return {"ok": True, "games": sendGames(request.args.get('userId'), int(request.args.get('numMatches')))}
+        userId = request.args.get('userId')
+        numMatches = request.args.get('numMatches')
+        heroId = request.args.get('heroId')
+        gameModeId = request.args.get('gameModeId')
+        games = sendGames(int(userId), int(numMatches), int(heroId))
+        return {"ok": True, "games": games}
 
 if __name__ == "__main__":
     app.run()

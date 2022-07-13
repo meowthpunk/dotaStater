@@ -5,7 +5,7 @@
 
   <match-info
     :settings="this.matchSettings"
-    v-show="false"
+    v-show="gameInfoShow"
   />
 
   <match-statistic
@@ -30,6 +30,9 @@ export default {
     matchSettings: Object,
     kda: Object,
     isWin: Boolean,
+    gameInfoShow: Boolean,
+    itemsInfoShow: Boolean,
+    microStatsInfoShow: Boolean,
   }
 }
 </script>

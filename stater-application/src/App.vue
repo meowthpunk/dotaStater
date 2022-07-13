@@ -1,40 +1,24 @@
 <template>
-  <div>
-    <div>
-      <input type="checkbox" name="val">
-      <label for="val"> Game Info</label>
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <div>
-    <div>
-      <div>
-        <p>Lobby Type</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <dota-stater msg = "DotaStater"/>
-      </div>
-      <div>
-        <div>
-          <p>http;./82014?sadl;askd;129фывфывфывфывфыв12312а12а1221а124021</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <settings-menu v-show="true"/>
+  <select-box v-show="false"/>
+  <!-- <select-box v-show="true"/>
+  <select-box v-show="true"/> -->
 </template>
 
 <script>
-import DotaStater from './components/stater/DotaStater.vue'
+import settingsMenu from './components/settingsMenu.vue'
+import selectBox from './components/selectBox.vue'
 
 
 export default {
   name: 'App',
   components: {
-    DotaStater,
+    settingsMenu,
+    selectBox,
+  },
+  mounted(){
+    let num = 20
+    console.log(num.toString())
   }
 }
 </script>
@@ -44,5 +28,10 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+  font-family: Poppins;
+}
+input{
+  font-family: Poppins;
 }
 </style>
